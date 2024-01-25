@@ -1,1 +1,21 @@
 @tailwind utilities;
+
+form {
+  @apply flex flex-col gap-8 max-w-lg mx-auto items-center p-8;
+}
+
+form > div {
+  width: 100%;
+}
+
+input {
+  @apply px-2 py-1 mt-2 mb-1;
+}
+
+button {
+  @apply h-10 px-8 text-lg font-bold bg-gray-100 outline-none rounded-md cursor-pointer border border-gray-800;
+}
+
+button:hover {
+  @apply bg-gray-200;
+}

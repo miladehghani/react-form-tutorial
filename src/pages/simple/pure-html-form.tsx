@@ -19,15 +19,19 @@ export default function PureHTMLForm() {
       onInvalid={(e) => {
         console.log("onInvalid", e);
       }}
-      className="flex flex-col gap-4 container items-center p-8"
     >
-      <input type="text" name="name" placeholder="name" required min={5} />
+      <h1>3SC Party Registration Form</h1>
       <input
-        type="password"
-        name="password"
-        placeholder="password"
+        type="text"
+        name="firstName"
+        placeholder="Main Guest First Name"
         required
-        min={5}
+      />
+      <input
+        type="text"
+        name="lastName"
+        placeholder="Main Guest Last Name"
+        required
       />
       <div className="space-x-4">
         <button type="submit">Submit</button>
