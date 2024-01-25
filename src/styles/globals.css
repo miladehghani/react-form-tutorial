@@ -12,6 +12,10 @@ input {
   @apply px-2 py-1 mt-2 mb-1;
 }
 
+label {
+  @apply text-lg font-semibold;
+}
+
 button {
   @apply h-10 px-8 text-lg font-bold bg-gray-100 outline-none rounded-md cursor-pointer border border-gray-800;
 }

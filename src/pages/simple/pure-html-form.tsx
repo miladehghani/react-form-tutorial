@@ -33,10 +33,8 @@ export default function PureHTMLForm() {
         placeholder="Main Guest Last Name"
         required
       />
-      <div className="space-x-4">
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </div>
+
+      <button type="submit">Submit</button>
     </form>
   );
 }

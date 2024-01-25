@@ -1,4 +1,4 @@
-import { Input } from "@/components/Input";
+import { Input } from "@/components/FormInputs/Input-WithPropDrilling";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
@@ -12,8 +12,6 @@ const formSchema = yup.object({
   firstName: yup.string().required(),
   lastName: yup.string().required(),
 });
-
-type FormValue = yup.InferType<typeof formSchema>;
 
 export default function ReactHookForm() {
   const { register, handleSubmit, formState } = useForm({
