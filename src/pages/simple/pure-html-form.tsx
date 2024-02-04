@@ -1,7 +1,7 @@
 import { FormEventHandler } from "react";
 
 export default function PureHTMLForm() {
-  const onSubmit: FormEventHandler<HTMLFormElement> = () => (event: any) => {
+  const onSubmit: FormEventHandler<HTMLFormElement> = (event: any) => {
     event.preventDefault();
     let values: any = {};
     const formData = new FormData(event.currentTarget);
@@ -18,6 +18,10 @@ export default function PureHTMLForm() {
       onSubmit={onSubmit}
       onInvalid={(e) => {
         console.log("onInvalid", e);
+        //@ts-ignore
+        console.log("Invalid value:", e.target.value);
+        //@ts-ignore
+        console.log("Invalid input name:", e.target.name);
       }}
     >
       <h1>3SC Party Registration Form</h1>
