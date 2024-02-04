@@ -1,40 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Hook Form: 3SC Party Registry Form Experimentation
 
-## Getting Started
+## Description
 
-First, run the development server:
+This repository delves into the world of React Hook Form, exploring its versatility in building different versions of a Party Registry form. We'll embark on a journey through three distinct implementations, each showcasing the library's power and flexibility:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Simple Guest Name Form (Pure HTML):** Our baseline, a straightforward HTML form capturing guest names. While functional, it lacks the interactivity and validation benefits of pure html.
+2. **Simple Guest Name Form (React Hook Form):** Level up your form with React Hook Form! This version leverages the library's intuitive hooks for efficient form management, validation, and error handling.
+3. **Nested Guest Form with Dietary & Plus One Options (React Hook Form Context Provider):** Embark on the most intricate form exploration. Utilizing the Context Provider, we'll create a nested structure to manage complex data like dietary preferences and a list of plus ones using `useFieldArray` hook.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why React Hook Form?
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Ease of Use:** The simple yet powerful API enables you to build robust forms without boilerplate code, making it a dream for developers of all levels.
+- **Flexible Validation:** Define validation rules in a declarative manner, ensuring data integrity and providing meaningful feedback to users.
+- **Built-in Error Handling:** Seamlessly manage validation errors, displaying them to users in a clear and user-friendly way.
+- **Data Synchronization:** Keep your form data in sync with your application state without manual effort.
+- **Context Provider Integration:** Handle complex form structures gracefully, making React Hook Form an ideal choice for nested forms and intricate data relationships.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Getting Started
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. **Clone the Repository:** Use `git clone https://github.com/miladehghani/react-form-tutorial` to get started.
+2. **Install Dependencies:** Run `npm install`to install all required packages.
+3. **Start the Development Server:** Use `npm run dev` to launch the development server and access the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Branches
 
-## Learn More
+- Master: This branch contains only the essential tools of the project, including libraries and base styling. Implement mentioned features when you are ready.
+- Develop: This branch contains all implemented features, serving as a reference for learners.
 
-To learn more about Next.js, take a look at the following resources:
+#### Explore the Code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Each form version resides in its own separate folder within the `src` directory, checkout to `develop` branch and explore:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `src/page/simple/pure-html-form.tsx`
+- `src/page/simple/react-hook-form.tsx`
+- `src/page/simple/react-hook-form-with-context.tsx`
+- `src/page/nested/react-hook-form-with-context.tsx`
 
-## Deploy on Vercel
+Dive into each folder to examine the implementation and gain hands-on experience with React Hook Form in different scenarios.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome contributions to this project! Feel free to fork the repository, make changes, and submit pull requests.
