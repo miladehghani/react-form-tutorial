@@ -3,13 +3,8 @@ import { FormEventHandler } from "react";
 export default function PureHTMLForm() {
   const onSubmit: FormEventHandler<HTMLFormElement> = (event: any) => {
     event.preventDefault();
-    let values: any = {};
     const formData = new FormData(event.currentTarget);
-
-    formData.forEach((value, key) => {
-      values[key] = value;
-    });
-
+    let values = Object.fromEntries(formData);
     console.log(values);
   };
 
