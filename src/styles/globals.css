@@ -1,27 +1,29 @@
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  font-family: "Roboto", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+form {
+  @apply flex flex-col gap-8 max-w-lg mx-auto items-center p-8;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+form > div {
+  width: 100%;
+}
+
+input {
+  @apply px-2 py-1 mt-2 mb-1 h-8 min-w-64 rounded-lg border border-solid border-gray-300 shadow-lg;
+}
+
+label {
+  @apply text-lg font-semibold;
+}
+
+button {
+  @apply h-10 px-8 text-lg font-bold bg-gray-600 shadow outline-none rounded-md cursor-pointer border border-solid border-gray-400 text-white hover:bg-gray-400;
+}
+
+a {
+  @apply no-underline hover:bg-gray-400 hover:text-white border-solid border border-gray-400 text-black w-fit p-4 rounded font-medium;
 }
