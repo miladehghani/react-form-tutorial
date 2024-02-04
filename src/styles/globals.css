@@ -1,5 +1,9 @@
 @tailwind utilities;
 
+* {
+  font-family: "Roboto", serif;
+}
+
 form {
   @apply flex flex-col gap-8 max-w-lg mx-auto items-center p-8;
 }
@@ -9,7 +13,7 @@ form > div {
 }
 
 input {
-  @apply px-2 py-1 mt-2 mb-1;
+  @apply px-2 py-1 mt-2 mb-1 h-8 min-w-64 rounded-lg border border-solid border-gray-300 shadow-lg;
 }
 
 label {
@@ -17,9 +21,9 @@ label {
 }
 
 button {
-  @apply h-10 px-8 text-lg font-bold bg-gray-100 outline-none rounded-md cursor-pointer border border-gray-800;
+  @apply h-10 px-8 text-lg font-bold bg-gray-600 shadow outline-none rounded-md cursor-pointer border border-solid border-gray-400 text-white hover:bg-gray-400;
 }
 
-button:hover {
-  @apply bg-gray-200;
+a {
+  @apply no-underline hover:bg-gray-400 hover:text-white border-solid border border-gray-400 text-black w-fit p-4 rounded font-medium;
 }

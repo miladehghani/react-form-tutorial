@@ -7,7 +7,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-5 p-8">
+    <main className="flex flex-col gap-5 p-8 items-center">
+      <h1>React Form Tutorial</h1>
       <Link href="simple/pure-html-form">Simple Form - Html</Link>
       <Link href="simple/react-hook-form">Simple Form - React Hook Form</Link>
       <Link href="simple/react-hook-form-with-context">
