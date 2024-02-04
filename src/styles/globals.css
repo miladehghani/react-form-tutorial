@@ -27,3 +27,11 @@ button {
 a {
   @apply no-underline hover:bg-gray-400 hover:text-white border-solid border border-gray-400 text-black w-fit p-4 rounded font-medium;
 }
+
+.chips {
+  @apply border border-gray-800 border-solid rounded p-2;
+}
+
+.chips-active {
+  @apply bg-green-800 text-white;
+}
