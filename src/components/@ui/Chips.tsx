@@ -5,15 +5,7 @@ function Chips({
   children,
 }: { checked: boolean } & PropsWithChildren) {
   return (
-    <span
-      className={
-        checked
-          ? "border border-gray-800 border-solid rounded p-2 bg-green-800 text-white"
-          : "border border-gray-800 border-solid rounded p-2"
-      }
-    >
-      {children}
-    </span>
+    <span className={checked ? "chips chips-active" : "chips"}>{children}</span>
   );
 }
 
