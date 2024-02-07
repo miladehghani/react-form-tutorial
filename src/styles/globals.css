@@ -4,12 +4,19 @@
   font-family: "Roboto", serif;
 }
 
+title {
+  @apply block text-2xl font-bold text-center;
+}
+
 form {
   @apply flex flex-col gap-8 max-w-lg mx-auto items-center p-8;
 }
 
 form > div {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 input {
@@ -17,7 +24,7 @@ input {
 }
 
 label {
-  @apply text-lg font-semibold;
+  @apply text-lg font-semibold mr-4 block;
 }
 
 button {
